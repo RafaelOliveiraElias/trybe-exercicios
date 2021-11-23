@@ -1,7 +1,23 @@
-div, div, div, div, div {
-    background-color: #f76c5e #586BA4 black red gray
-}    
+div:nth-of-type(1)
+{
+    background-color: #f76c5e 
+}
+div:nth-of-type(2){
+    background: #586BA4;
+}
+div:nth-of-type(3){
+    background: #F68E5F;
+}
+div:nth-of-type(4){
+    background: #324376;
+}
+div:nth-of-type(5){
+    background: #F5DD90;
+}
 div:hover{
     border: solid black;
 }
 
+div:nth-child(2n+1) {
+    font-style: italic;
+} 
