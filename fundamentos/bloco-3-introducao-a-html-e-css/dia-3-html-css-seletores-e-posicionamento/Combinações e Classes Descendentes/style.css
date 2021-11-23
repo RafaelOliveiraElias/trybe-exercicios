@@ -1,0 +1,38 @@
+ol {
+    background-color: yellow;
+
+}
+
+ol li{
+    color: green;
+}
+ol li.impar{
+    color: black;
+    text-transform: uppercase;
+}
+
+h1, h2, h3 {
+    color: red;
+}
+h1 em, h2 em, h3 em{
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li{
+    font-size: 20px;
+}
+li em{
+    font-weight: bold;
+}
+
+ul li.firsts{
+    color:blue
+}
+ul li.firsts.java{
+    background: pink;
+}
+
+ul li.aliados:hover{
+    font-weight: 900;
+}

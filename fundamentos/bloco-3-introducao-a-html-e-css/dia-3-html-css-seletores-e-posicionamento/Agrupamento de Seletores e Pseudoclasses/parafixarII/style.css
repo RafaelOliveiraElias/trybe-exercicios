@@ -1,0 +1,7 @@
+div, div, div, div, div {
+    background-color: #f76c5e #586BA4 black red gray
+}    
+div:hover{
+    border: solid black;
+}
+
