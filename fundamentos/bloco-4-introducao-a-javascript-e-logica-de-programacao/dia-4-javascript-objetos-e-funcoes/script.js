@@ -1,4 +1,4 @@
-//exercicios 1 ao 5
+//exercicios 1 ao 5, objetos
 
 let info = {
     personagem: 'Margarida',
