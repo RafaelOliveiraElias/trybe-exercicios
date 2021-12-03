@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p id="paragraph" class="para">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p id="second-paragraph" class="para">Segundo parágrafo!</p>
+    </header>
+    <script>
+      
+      const paragraph = document.querySelector("#paragraph");
+      paragraph.style.color = "red";
+      document.querySelector("#page-title").innerText = "Senhor dos Aneis";
+      
+      const page_title = document.querySelector("#page-title");
+      page_title.style.color= "green";
+      document.querySelectorAll("p")[1].innerText = "melhor filme";  
+      
+      const para = document.querySelectorAll("#para")[0];
+      para.style.color = "green";
+
+      const subtitle = document.querySelectorAll("h4")[0];
+      subtitle.style.color = "red"; 
+  
+
+      /*const paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+      document.getElementById("page-title").innerText = "Senhor dos Aneis";
+      
+      const page_title = document.getElementById("page-title");
+      page_title.style.color= "green";
+      document.getElementById("second-paragraph").innerText = "melhor filme";  
+      
+      const para = document.getElementsByClassName("para")[0]
+      para.style.color = "green";
+
+      const subtitle = document.getElementsByTagName("h4")[0]
+      subtitle.style.color = "brown"; */
+
+    </script>
+  </body>
+</html>
