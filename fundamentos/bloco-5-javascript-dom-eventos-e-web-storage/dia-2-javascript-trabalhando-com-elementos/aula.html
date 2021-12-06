@@ -1,0 +1,52 @@
+<!-- arquivo index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>  
+    <main id="paiDoPai">
+        <section id="pai">
+          <section id="primeiroFilho"></section>
+          <section id="elementoOndeVoceEsta">
+            <section id="primeiroFilhoDoFilho"></section>
+            <section id="segundoEUltimoFilhoDoFilho"></section>
+          </section>
+          Atenção!
+          <section id="terceiroFilho"></section>
+          <section id="quartoEUltimoFilho"></section>
+        </section>
+      </main>
+  <script>
+      document.getElementById('elementoOndeVoceEsta').parentNode.style.color = "green";
+      document.getElementById('elementoOndeVoceEsta').firstElementChild.innerText= "estudos com elementos";
+      console.log(document.getElementById('pai').firstElementChild);
+      console.log(document.getElementById('elementoOndeVoceEsta').previousElementSibling);
+      console.log(document.getElementById('elementoOndeVoceEsta').nextSibling);
+      console.log(document.getElementById('elementoOndeVoceEsta').nextElementSibling);
+      console.log(document.getElementById('pai').children[2]);
+      
+      let pai = document.getElementById('pai')
+      ;
+      pai.appendChild(document.createElement('section'))
+
+
+      let section = document.createElement('section');
+      section.innerText = "irmão do novo de novo";
+      let elemento = document.querySelector('#elementoOndeVoceEsta');
+      elemento.appendChild(section);
+
+
+      let filho = document.getElementById('primeiroFilhoDoFilho');
+      filho.appendChild(document.createElement('p'))
+
+      //acessar terceiro filho a partir do novo p :
+      console.log(document.querySelector('p').parentElement.parentElement.nextElementSibling)
+
+  </script>
+</body>
+</html>
