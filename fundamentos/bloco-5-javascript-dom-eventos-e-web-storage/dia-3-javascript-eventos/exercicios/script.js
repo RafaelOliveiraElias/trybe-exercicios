@@ -119,9 +119,71 @@ for (let i = 0; i < cadaDia.length; i += 1){
 cadaDia[i].addEventListener('mouseout', zoomOut);
 }
 
+function corNormal(evento){
+  if(evento.target.style.color != "green"){
+  evento.target.style.color = "green"
+  evento.target.style.fontWeight= "bolder"
+  }else {
+    evento.target.style.color = "rgb(119,119,119)"
+    evento.target.style.fontWeight= "normal"
+  }
+}
+
+for (let i = 0; i < cadaDia.length; i += 1){
+  cadaDia[i].addEventListener('click', corNormal);
+  }
+  
+
 //7
 
-function agenda() {
-    var x = document.getElementById("task-input").value;
-    document.getElementById("task-input").innerHTML = x;
+let span = document.createElement('span')
+span.innerText = "Projetos:";
+let my_tasks = document.getElementsByClassName('my-tasks')[0]
+
+my_tasks.appendChild(span)
+
+
+//8
+
+let cor = document.createElement('div');
+let string = 'green'
+cor.style.backgroundColor= string;
+cor.className = "task";
+
+my_tasks.appendChild(cor)
+
+//9
+
+function selecionar(){
+  if (cor.className == 'task'){
+  cor.className = 'task selected'
+  cor.style.border = "thick solid white"
+  }else{
+    cor.className = 'task';
+    cor.style.border = "1px solid black"
   }
+}
+
+cor.addEventListener('click', selecionar)
+
+
+
+//Bônus:
+  let my_tasks1 = document.getElementsByClassName('input-container')[0]
+  let p = document.createElement('p');
+  my_tasks1.appendChild(p)
+  
+  function agenda() {
+    if (document.getElementById("task-input").value == ''){
+      alert ("Adicionar")
+    } else {
+      let span1 = document.createElement('span')
+      span1.innerHTML = document.getElementById("task-input").value + '<p>' ;
+      my_tasks1.appendChild(span1)
+      document.getElementById("task-input").value = '';
+     }
+  }
+    let btn_add = document.getElementById('btn-add');
+  
+    btn_add.addEventListener('click',agenda);
+  
