@@ -1,0 +1,24 @@
+*{
+    font-family: 'Open Sans',Arial,sans-serif;
+}
+div{
+    width: 900px;
+    text-align: center ;
+    display: inline-block;
+    padding: 50px;
+    margin-left: 7% ; 
+    line-height: 30px 
+}
+
+div p{
+    text-align: left;
+}
+aside{
+    float: left;
+    padding: 20px;
+    margin-right: 50px;
+}
+
+footer{
+    text-align: center ;
+}
