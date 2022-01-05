@@ -6,11 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma-rtl.min.css">
+    <link rel="stylesheet" href="dist/css/DatePickerX.min.css">
+    <script src="dist/js/DatePickerX.min.js"></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
 </head>
 <body>
+    <script>
+        const validate = new window.JustValidate('#form');
+      </script>
+    <h1>Formulário:</h1>
    <form method="get">
     <fieldset>
-        <legend>Formulário:</legend>
+        <legend></legend>
         <label for="name">Nome completo:</label>
         <input type="text" id="name" name="name" maxlength="30" required placeholder="Nome completo"><br><br>
         <label for="email">Email:</label>

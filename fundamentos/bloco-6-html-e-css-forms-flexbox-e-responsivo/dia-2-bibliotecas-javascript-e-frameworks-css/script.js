@@ -36,3 +36,4 @@ for (let i = 0; i < estadosBR.length; i += 1){
     cadaUm.innerText = estadosBR[i]['nome'];
     listaEstados.appendChild(cadaUm);
 }
+
