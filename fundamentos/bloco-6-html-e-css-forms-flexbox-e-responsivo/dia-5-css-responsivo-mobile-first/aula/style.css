@@ -18,7 +18,14 @@ body {
     font-size: 25px;
     margin: 0;
   }
-  
+
+  .photos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   p {
     font-size: 18px;
     font-weight: 300;

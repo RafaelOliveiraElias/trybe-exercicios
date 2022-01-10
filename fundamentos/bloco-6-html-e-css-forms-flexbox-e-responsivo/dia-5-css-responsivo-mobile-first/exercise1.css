@@ -1,0 +1,99 @@
+/*
+ * @see http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * apply a natural box layout model to all elements, but allowing components to change
+ */
+ html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    color: #463F3A;
+  }
+  
+  body {
+    background-color: #F4F3EE;
+  }
+
+  header{
+    background-color: #BCB8B1;
+    width: auto;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px groove #E0AFA0;
+    margin-bottom: 15px;
+  }
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  article p{
+    text-align: center;
+    width: 375px;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #463F3A;
+  }
+  
+  h2 {
+    background-color: #BCB8B1;
+    font-size: 1.7rem;
+    padding: 7px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #463F3A;
+    border: 2px groove #E0AFA0;
+  }
+  
+  img {
+      max-width: 100%;
+  }
+  
+  main {
+  
+  }
+  
+  section {
+  
+  }
+  
+  figure {
+      margin-bottom: 35px;
+  }
+  
+  figcaption {
+    font-size: .8em;
+    text-align: center;
+  }
+
+  .photos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  @media screen and (min-width:900px){
+    .photos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      figure {
+        margin-bottom: 35px;
+        margin: 5px;
+    } 
+  }
