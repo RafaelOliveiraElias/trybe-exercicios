@@ -62,10 +62,6 @@ const books = [
   ];
   
   function authorUnique(arr) {
-    let a = arr.forEach((each1, index1) => {
-        let b =arr.find((each2, index2) => each2.author.birthYear === each1.author.birthYear && index1 !== index2)
-        return b;
-    })
-    return a
+    return arr.every((each1, index1) => !arr.find((each2, index2) => (each2.author.birthYear === each1.author.birthYear) && (index1 !== index2)))
 }
 console.log(authorUnique(books))
