@@ -61,16 +61,9 @@ const books = [
     },
   ];
   
-  function smallerName(arr) {
-    let nameBook = arr[0].name;
-    // escreva aqui o seu código
-    arr.forEach((each) => {
-        if(each.name.length < nameBook.length){
-            nameBook = each.name
-        }        
-    });
-    // Variável nameBook que receberá o valor do menor nome;
-    return nameBook;
+  function someBookWasReleaseOnThe80s(arr) {
+    let result = arr.some((each) => each.releaseYear >= 1980 && each.releaseYear <= 1989 );
+    return result
   }
-  console.log(smallerName(books))
-  
+
+  console.log(someBookWasReleaseOnThe80s(books));

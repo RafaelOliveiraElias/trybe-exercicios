@@ -61,16 +61,9 @@ const books = [
     },
   ];
   
-  function smallerName(arr) {
-    let nameBook = arr[0].name;
-    // escreva aqui o seu código
-    arr.forEach((each) => {
-        if(each.name.length < nameBook.length){
-            nameBook = each.name
-        }        
-    });
-    // Variável nameBook que receberá o valor do menor nome;
-    return nameBook;
+  function everyoneWasBornOnSecXX(arr) {
+    let result = arr.every((each) => each.author.birthYear >= 1901 && each.author.birthYear < 2000 );
+    return result
   }
-  console.log(smallerName(books))
-  
+
+  console.log(everyoneWasBornOnSecXX(books));

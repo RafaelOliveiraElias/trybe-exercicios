@@ -61,16 +61,11 @@ const books = [
     },
   ];
   
-  function smallerName(arr) {
-    let nameBook = arr[0].name;
-    // escreva aqui o seu código
-    arr.forEach((each) => {
-        if(each.name.length < nameBook.length){
-            nameBook = each.name
-        }        
-    });
-    // Variável nameBook que receberá o valor do menor nome;
-    return nameBook;
-  }
-  console.log(smallerName(books))
-  
+  function authorUnique(arr) {
+    let a = arr.forEach((each1, index1) => {
+        let b =arr.find((each2, index2) => each2.author.birthYear === each1.author.birthYear && index1 !== index2)
+        return b;
+    })
+    return a
+}
+console.log(authorUnique(books))
